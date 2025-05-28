@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>    
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .menu-category {
+            margin-top: 20px;
+        }
+        .menu-item {
+            margin: 10px 0;
+        }
+        .menu-item img {
+            height: 150px;
+            object-fit: cover;
+        }
+        .logo{
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        body{
+            background-color: rgb(255, 253, 208);
+
+        }
+    </style>
+</head>
+<body>
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <div class="logo"><img src="./images/logo.jpeg" height="50px" width="50px"></div>
+        </a>
+  
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="./index.html" class="nav-link active" aria-current="page">Home</a></li>
+          <!-- <li class="nav-item"><a href="./menu.html" class="nav-link">Menu</a></li> -->
+          <li class="nav-item"><a href="cart.html" class="nav-link">cart</a></li>
+          <li class="nav-item"><a href="login.html" class="nav-link">login/signup</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+      </header>
+
+    <div class="container my-5">
+        <form>
+            <!-- Hot Beverages -->
+            <div class="menu-category">
+                <h2>Hot Beverages</h2>
+                <div class="row">
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/tea.jpg" class="card-img-top" alt="Tea">
+                            <div class="card-body">
+                                <h5 class="card-title">Tea</h5>
+                                <p class="card-text">₹10</p>
+                                <input type="number" class="form-control" id="tea" name="tea" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/hot_coffee.jpeg" class="card-img-top" alt="Hot Coffee">
+                            <div class="card-body">
+                                <h5 class="card-title">Hot Coffee</h5>
+                                <p class="card-text">₹45</p>
+                                <input type="number" class="form-control" id="hot_coffee" name="hot_coffee" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/hot_chocolate.jpeg" class="card-img-top" alt="Hot Chocolate">
+                            <div class="card-body">
+                                <h5 class="card-title">Hot Chocolate</h5>
+                                <p class="card-text">₹65</p>
+                                <input type="number" class="form-control" id="hot_chocolate" name="hot_chocolate" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more hot beverages similarly -->
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/Nutella-Hot-Chocolate.jpg" class="card-img-top" alt="Nutella Hot Chocolate">
+                            <div class="card-body">
+                                <h5 class="card-title">Nutella Hot Chocolate</h5>
+                                <p class="card-text">₹75</p>
+                                <input type="number" class="form-control" id="Nutella_Hot_Chocolate" name="Nutella_Hot_Chocolate" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shakes -->
+            <div class="menu-category">
+                <h2>Shakes</h2>
+                <div class="row">
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/cold_coffee.jpeg" class="card-img-top" alt="Cold Coffee">
+                            <div class="card-body">
+                                <h5 class="card-title">Cold Coffee</h5>
+                                <p class="card-text">₹80</p>
+                                <input type="number" class="form-control" id="cold_coffee" name="cold_coffee" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/butterscotch_shake.jpeg" class="card-img-top" alt="butterscotch shake">
+                            <div class="card-body">
+                                <h5 class="card-title">butterscotch shake</h5>
+                                <p class="card-text">₹80</p>
+                                <input type="number" class="form-control" id="butterscotch_shake" name="butterscotch_shake" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/Chocolate-Milkshake-square.jpg" class="card-img-top" alt="Chocolate milkshake">
+                            <div class="card-body">
+                                <h5 class="card-title">Chocolate milkshake</h5>
+                                <p class="card-text">₹80</p>
+                                <input type="number" class="form-control" id="Chocolate milkshake" name="Chocolate milkshake" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/Nutella-milkshake.jpg" class="card-img-top" alt="Nutella milkshake">
+                            <div class="card-body">
+                                <h5 class="card-title">Nutella milkshake</h5>
+                                <p class="card-text">₹99</p>
+                                <input type="number" class="form-control" id="Nutella milkshake" name="Nutella milkshake" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/Oreo-Milkshake.jpg" class="card-img-top" alt="Oreo milkshake">
+                            <div class="card-body">
+                                <h5 class="card-title">Oreo milkshake</h5>
+                                <p class="card-text">₹99</p>
+                                <input type="number" class="form-control" id="Oreo milkshake" name="Oreo milkshake" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            
+            
+            <!-- Bakery -->
+            <div class="menu-category">
+                <h2>Bakery</h2>
+                <div class="row">
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/truffle_pastry.jpeg" class="card-img-top" alt="truffle pastry">
+                            <div class="card-body">
+                                <h5 class="card-title">Truffle pastry</h5>
+                                <p class="card-text">₹89</p>
+                                <input type="number" class="form-control" id="truffle pastry" name="truffle pastry" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/blueberry_cheese_cake.jpeg" class="card-img-top" alt="Blueberry cheese cake">
+                            <div class="card-body">
+                                <h5 class="card-title">Blueberry Cheese Cake</h5>
+                                <p class="card-text">₹130</p>
+                                <input type="number" class="form-control" id="Blueberry cheese cake" name="Blueberry cheese cake" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/biscoff_cheese_cake.jpeg" class="card-img-top" alt="Biscoff Cheese Cake">
+                            <div class="card-body">
+                                <h5 class="card-title">Biscoff Cheese cake</h5>
+                                <p class="card-text">₹130</p>
+                                <input type="number" class="form-control" id="Biscoff Cheese Cake" name="Biscoff Cheese Cake" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/brownie_with_ice_cream.jpg" class="card-img-top" alt="brownie with ice cream">
+                            <div class="card-body">
+                                <h5 class="card-title">Brownie with Ice Cream</h5>
+                                <p class="card-text">₹99</p>
+                                <input type="number" class="form-control" id="brownie with ice cream" name="brownie with ice cream" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/chocolate_waffle.jpeg" class="card-img-top" alt="Chocolate waffle">
+                            <div class="card-body">
+                                <h5 class="card-title">Chocolate Waffle</h5>
+                                <p class="card-text">₹130</p>
+                                <input type="number" class="form-control" id="Chocolate waffle" name="Chocolate waffle" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/nutella_waffle.jpeg" class="card-img-top" alt="nutella waffle">
+                            <div class="card-body">
+                                <h5 class="card-title">Nutella Waffle</h5>
+                                <p class="card-text">₹130</p>
+                                <input type="number" class="form-control" id="nutella waffle" name="nutella waffle" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+            <!-- pasta -->
+            <div class="menu-category">
+                <h2>Pasta</h2>
+                <div class="row">
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/red_sauce_pasta.jpeg" class="card-img-top" alt="red sauce pasta">
+                            <div class="card-body">
+                                <h5 class="card-title">Red Sauce Pasta</h5>
+                                <p class="card-text">₹110</p>
+                                <input type="number" class="form-control" id="red sauce pasta" name="red sauce pasta" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/white_sauce_pasta.jpeg" class="card-img-top" alt="white sauce pasta">
+                            <div class="card-body">
+                                <h5 class="card-title">White Sauce Pasta</h5>
+                                <p class="card-text">₹120</p>
+                                <input type="number" class="form-control" id="white sauce pasta" name="white sauce pasta" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/pink_sauce_pasta.jpeg" class="card-img-top" alt="pink sauce pasta">
+                            <div class="card-body">
+                                <h5 class="card-title">Pink Sauce Pasta</h5>
+                                <p class="card-text">₹130</p>
+                                <input type="number" class="form-control" id="pink sauce pasta" name="pink sauce pasta" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/mac_n_cheese.jpeg" class="card-img-top" alt="mac n cheese">
+                            <div class="card-body">
+                                <h5 class="card-title">Mac n Cheese</h5>
+                                <p class="card-text">₹150</p>
+                                <input type="number" class="form-control" id="mac n cheese" name="mac n cheese" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Breakpast  -->
+            <div class="menu-category">
+                <h2>Breakfast</h2>
+                <div class="row">
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/aloo paratha.jpeg" class="card-img-top" alt="aloo paratha">
+                            <div class="card-body">
+                                <h5 class="card-title">Aloo Paratha</h5>
+                                <p class="card-text">₹40</p>
+                                <input type="number" class="form-control" id="aloo paratha" name="aloo paratha" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/paneer paratha.jpeg" class="card-img-top" alt="paneer paratha">
+                            <div class="card-body">
+                                <h5 class="card-title">Paneer Paratha</h5>
+                                <p class="card-text">₹60</p>
+                                <input type="number" class="form-control" id="paneer paratha" name="paneer paratha" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/poha.jpeg" class="card-img-top" alt="poha">
+                            <div class="card-body">
+                                <h5 class="card-title">Poha</h5>
+                                <p class="card-text">₹50</p>
+                                <input type="number" class="form-control" id="poha" name="poha" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/bread butter toast.jpeg" class="card-img-top" alt="bread butter toast">
+                            <div class="card-body">
+                                <h5 class="card-title">Bread Butter Toast</h5>
+                                <p class="card-text">₹30</p>
+                                <input type="number" class="form-control" id="bread butter toast" name="bread butter toast" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/upma.jpeg" class="card-img-top" alt="upma">
+                            <div class="card-body">
+                                <h5 class="card-title">Upma</h5>
+                                <p class="card-text">₹60</p>
+                                <input type="number" class="form-control" id="upma" name="upma" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/uttapam.jpeg" class="card-img-top" alt="Uttapam">
+                            <div class="card-body">
+                                <h5 class="card-title">Uttapam</h5>
+                                <p class="card-text">₹79</p>
+                                <input type="number" class="form-control" id="Uttapam" name="Uttapam" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/idli sambar.jpeg" class="card-img-top" alt="idli sambar">
+                            <div class="card-body">
+                                <h5 class="card-title">Idle Sambar</h5>
+                                <p class="card-text">₹79</p>
+                                <input type="number" class="form-control" id="idli sambar" name="idli sambar" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>                            
+                    
+                </div>
+            </div>
+
+            <!--bite of snack-->
+            <div class="menu-category">
+                <h2>Bite Up Snack</h2>
+                <div class="row">
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/salted fries.jpeg" class="card-img-top" alt="salted fries">
+                            <div class="card-body">
+                                <h5 class="card-title">Salted Fries</h5>
+                                <p class="card-text">₹80</p>
+                                <input type="number" class="form-control" id="salted fries" name="salted fries" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/peri peri fries.jpeg" class="card-img-top" alt="peri peri fries">
+                            <div class="card-body">
+                                <h5 class="card-title">Peri Peri Fries</h5>
+                                <p class="card-text">₹90</p>
+                                <input type="number" class="form-control" id="peri peri fries" name="peri peri fries" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/aloo chole chaat.jpeg" class="card-img-top" alt="aloo chola chaat">
+                            <div class="card-body">
+                                <h5 class="card-title">Aloo Chola Chaat</h5>
+                                <p class="card-text">₹90</p>
+                                <input type="number" class="form-control" id="aloo chola chaat" name="aloo chola chaat" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/paneer chaat.jpeg" class="card-img-top" alt="paneer chaat">
+                            <div class="card-body">
+                                <h5 class="card-title">Paneer Chaat</h5>
+                                <p class="card-text">₹129</p>
+                                <input type="number" class="form-control" id="paneer chaat" name="paneer chaat" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Sandwich and Burger -->
+            <div class="menu-category">
+                <h2>Sandwich & Burger</h2>
+                <div class="row">
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/aloo grill sandwich.jpeg" class="card-img-top" alt="aloo grill sandwich">
+                            <div class="card-body">
+                                <h5 class="card-title">Aloo Grill Sandwich</h5>
+                                <p class="card-text">₹70</p>
+                                <input type="number" class="form-control" id="aloo grill sandwich" name="aloo grill sandwich" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/veg grilled sandwich.jpeg" class="card-img-top" alt="Veg Grilled Sandwich">
+                            <div class="card-body">
+                                <h5 class="card-title">Veg Grilled Sandwich</h5>
+                                <p class="card-text">₹80</p>
+                                <input type="number" class="form-control" id="Veg Grilled Sandwich" name="Veg Grilled Sandwich" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/paneer taka tak sandwich.jpeg" class="card-img-top" alt="paneer taka tak sandwich">
+                            <div class="card-body">
+                                <h5 class="card-title">Paneer Taka Tak Sandwich</h5>
+                                <p class="card-text">₹120</p>
+                                <input type="number" class="form-control" id="paneer taka tak sandwich" name="paneer taka tak sandwich" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/classic american potato burger.jpeg" class="card-img-top" alt="classic american potato burger">
+                            <div class="card-body">
+                                <h5 class="card-title">Classic American Potato Burger</h5>
+                                <p class="card-text">₹80</p>
+                                <input type="number" class="form-control" id="classic american potato burger" name="classic american potato burger" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/classic american paneer burger.jpeg" class="card-img-top" alt="classic american paneer burger">
+                            <div class="card-body">
+                                <h5 class="card-title">Classic American Paneer Burger</h5>
+                                <p class="card-text">₹99</p>
+                                <input type="number" class="form-control" id="classic american paneer burger" name="classic american paneer burger" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/ott cheese melt burger.jpeg" class="card-img-top" alt="ott cheese melt burger">
+                            <div class="card-body">
+                                <h5 class="card-title">Oot Cheese Melt Burger</h5>
+                                <p class="card-text">₹99</p>
+                                <input type="number" class="form-control" id="ott cheese melt burger" name="ott cheese melt burger" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Momos -->
+            <div class="menu-category">
+                <h2>Momos</h2>
+                <div class="row">
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/veg steam momos.jpeg" class="card-img-top" alt="veg steam momos">
+                            <div class="card-body">
+                                <h5 class="card-title">Veg Steam Momos</h5>
+                                <p class="card-text">₹70</p>
+                                <input type="number" class="form-control" id="veg steam momos" name="veg steam momos" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/veg fried momos.jpeg" class="card-img-top" alt="veg fried momos">
+                            <div class="card-body">
+                                <h5 class="card-title">Veg Fried Momos</h5>
+                                <p class="card-text">₹80</p>
+                                <input type="number" class="form-control" id="veg fried momos" name="veg fried momos" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/veg kurkure momos.jpeg" class="card-img-top" alt="veg kurkure momos">
+                            <div class="card-body">
+                                <h5 class="card-title">Veg Kurkure Momos</h5>
+                                <p class="card-text">₹90</p>
+                                <input type="number" class="form-control" id="veg kurkure momos" name="veg kurkure momos" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/steam paneer momos.jpeg" class="card-img-top" alt="steam paneer momos">
+                            <div class="card-body">
+                                <h5 class="card-title">Steam Paneer Momos</h5>
+                                <p class="card-text">₹80</p>
+                                <input type="number" class="form-control" id="steam paneer momos" name="steam paneer momos" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Chinese -->
+            <div class="menu-category">
+                <h2>Chinese</h2>
+                <div class="row">
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/crispy corn.jpeg" class="card-img-top" alt="crispy corn">
+                            <div class="card-body">
+                                <h5 class="card-title">crispy Corn</h5>
+                                <p class="card-text">₹99</p>
+                                <input type="number" class="form-control" id="crispy corn" name="crispy corn" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/crispy chinese bhel.jpeg" class="card-img-top" alt="crispy chinese bhel">
+                            <div class="card-body">
+                                <h5 class="card-title">Crispy Chinese Bhel</h5>
+                                <p class="card-text">₹80</p>
+                                <input type="number" class="form-control" id="crispy chinese bhel" name="crispy chinese bhel" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/honey chilli potao.jpeg" class="card-img-top" alt="honey chilli potato">
+                            <div class="card-body">
+                                <h5 class="card-title">Honey Chilli Potato</h5>
+                                <p class="card-text">₹99</p>
+                                <input type="number" class="form-control" id="honey chilli potato" name="honey chilli potato" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/chilli mushroom.jpeg" class="card-img-top" alt="chilli mushroom">
+                            <div class="card-body">
+                                <h5 class="card-title">Chilli Mushroom</h5>
+                                <p class="card-text">₹129</p>
+                                <input type="number" class="form-control" id="chilli mushroom" name="chilli mushroom" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/manchurian.jpeg" class="card-img-top" alt="manchurian">
+                            <div class="card-body">
+                                <h5 class="card-title">Manchurian</h5>
+                                <p class="card-text">₹90</p>
+                                <input type="number" class="form-control" id="manchurian" name="manchurian" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/veg fried rice.jpeg" class="card-img-top" alt="veg fried rice">
+                            <div class="card-body">
+                                <h5 class="card-title">Veg Fried Rice</h5>
+                                <p class="card-text">₹90</p>
+                                <input type="number" class="form-control" id="veg fried rice" name="veg fried rice" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/egg fried rice.jpeg" class="card-img-top" alt="egg fried rice">
+                            <div class="card-body">
+                                <h5 class="card-title">Egg Fried Rice</h5>
+                                <p class="card-text">₹99</p>
+                                <input type="number" class="form-control" id="egg fried rice" name="egg fried rice" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/veg noodles with manchurian.jpeg" class="card-img-top" alt="veg noodles with manchurian">
+                            <div class="card-body">
+                                <h5 class="card-title">Veg Noodles with Manchurian</h5>
+                                <p class="card-text">₹110</p>
+                                <input type="number" class="form-control" id="veg noodles with manchurian" name="veg noodles with manchurian" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/fried rice with manchurian.jpeg" class="card-img-top" alt="fried rice with manchurian">
+                            <div class="card-body">
+                                <h5 class="card-title">Fried Rice with Manchurian</h5>
+                                <p class="card-text">₹160</p>
+                                <input type="number" class="form-control" id="fried rice with manchurian" name="fried rice with manchurian" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            <!-- Rolls -->
+            <div class="menu-category">
+                <h2>Rolls</h2>
+                <div class="row">
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/veg roll.jpeg" class="card-img-top" alt="veg roll">
+                            <div class="card-body">
+                                <h5 class="card-title">Ott Veg Roll</h5>
+                                <p class="card-text">₹60</p>
+                                <input type="number" class="form-control" id="veg roll" name="veg roll" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/paneer roll.jpeg" class="card-img-top" alt="paneer roll">
+                            <div class="card-body">
+                                <h5 class="card-title">Healthy Paneer Roll</h5>
+                                <p class="card-text">₹90</p>
+                                <input type="number" class="form-control" id="paneer roll" name="paneer roll" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/egg roll.jpeg" class="card-img-top" alt="egg roll">
+                            <div class="card-body">
+                                <h5 class="card-title">Egg Roll</h5>
+                                <p class="card-text">₹90</p>
+                                <input type="number" class="form-control" id="egg roll" name="egg roll" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Biryani -->
+            <div class="menu-category">
+                <h2>Biryani</h2>
+                <div class="row">
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/veg dum biryani with raita.jpeg" class="card-img-top" alt="veg dum biryani with raita">
+                            <div class="card-body">
+                                <h5 class="card-title">Veg Dum Biryani with Raita</h5>
+                                <p class="card-text"₹89>
+                                <input type="number" class="form-control" id="veg dum biryani with raita" name="veg dum biryani with raita" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/egg dum biryani with raita.jpeg" class="card-img-top" alt="egg dum biryani with raita">
+                            <div class="card-body">
+                                <h5 class="card-title">Egg Dum Biryani with Raita</h5>
+                                <p class="card-text">₹99</p>
+                                <input type="number" class="form-control" id="egg dum biryani with raita" name="egg dum biryani with raita" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="card">
+                            <img src="./images/paneer dum biryani with raita.jpeg" class="card-img-top" alt="paneer dum biryani with raita">
+                            <div class="card-body">
+                                <h5 class="card-title">Paneer Dum Biryani with Raita</h5>
+                                <p class="card-text">₹99</p>
+                                <input type="number" class="form-control" id="paneer dum biryani with raita" name="paneer dum biryani with raita" value="0" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+            <div class="text-center my-4">
+                <h4>Total: ₹<span id="totalAmount">0</span></h4>
+                <!-- <button type="button" class="btn btn-success" onclick="calculateTotal()">Calculate Total</button> -->
+                <button type="button" class="btn btn-primary" onclick="placeOrder()">Place Order</button>
+            </div>
+
+
+        </form>    
+    </div>
+
+    <!-- <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Restaurant. All rights reserved.</p>
+    </footer> -->
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="ms-3"><a class="text-body-secondary" href="https://x.com/imVkohli" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14-.003-.282-.01-.422A6.68 6.68 0 0 0 16 3.539a6.555 6.555 0 0 1-1.889.518 3.301 3.301 0 0 0 1.444-1.817 6.533 6.533 0 0 1-2.084.793 3.286 3.286 0 0 0-5.595 2.994A9.325 9.325 0 0 1 1.114 2.1a3.286 3.286 0 0 0 1.018 4.381A3.323 3.323 0 0 1 .64 6.575v.045a3.286 3.286 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.615-.059 3.286 3.286 0 0 0 3.067 2.281A6.588 6.588 0 0 1 .781 13.58a6.32 6.32 0 0 1-.781-.045A9.344 9.344 0 0 0 5.026 15z"/>
+              </svg></a></li>
+              <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/virat.kohli/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+              </svg></a></li>
+              <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/virat.kohli/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+              </svg></a></li>
+    
+        </ul>
+        <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
